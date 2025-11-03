@@ -1,0 +1,31 @@
+# requirements.txt
+
+# --- Core Application & API ---
+fastapi
+uvicorn
+pydantic
+
+# --- Database ---
+psycopg2-binary
+python-dotenv
+
+# --- Data Handling & Analysis ---
+pandas
+yfinance
+pendulum
+
+# --- Machine Learning ---
+scikit-learn
+joblib
+
+# --- Plotting & Stats (for later steps) ---
+matplotlib
+seaborn
+scipy
+
+# --- Orchestration ---
+apache-airflow
+
+cachetools
+
+google.generativeai
