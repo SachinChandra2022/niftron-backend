@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/FastAPI-0.100+-green?style=for-the-badge&logo=fastapi" alt="FastAPI">
   <img src="https://img.shields.io/badge/Apache%20Airflow-2.9+-blueviolet?style=for-the-badge&logo=apache-airflow" alt="Apache Airflow">
   <img src="https://img.shields.io/badge/Docker-24+-blue?style=for-the-badge&logo=docker" alt="Docker">
-  <img src="https://img.shields.io/github/license/SachinChandra2022/niftron-backend?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License: MIT">
 </div>
 
 <br/>
