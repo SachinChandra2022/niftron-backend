@@ -1,0 +1,223 @@
+[2025-11-09T15:49:28.509+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-09T15:49:28.519+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: niftron_daily_pipeline.ingest_data scheduled__2025-11-06T18:00:00+00:00 [queued]>
+[2025-11-09T15:49:28.523+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: niftron_daily_pipeline.ingest_data scheduled__2025-11-06T18:00:00+00:00 [queued]>
+[2025-11-09T15:49:28.523+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-09T15:49:28.530+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): ingest_data> on 2025-11-06 18:00:00+00:00
+[2025-11-09T15:49:28.535+0000] {standard_task_runner.py:63} INFO - Started process 42 to run task
+[2025-11-09T15:49:28.538+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'niftron_daily_pipeline', 'ingest_data', 'scheduled__2025-11-06T18:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/niftron_pipeline.py', '--cfg-path', '/tmp/tmpe2xna6qz']
+[2025-11-09T15:49:28.540+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask ingest_data
+[2025-11-09T15:49:28.579+0000] {task_command.py:426} INFO - Running <TaskInstance: niftron_daily_pipeline.ingest_data scheduled__2025-11-06T18:00:00+00:00 [running]> on host a7068366ba2f
+[2025-11-09T15:49:28.642+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='niftron_daily_pipeline' AIRFLOW_CTX_TASK_ID='ingest_data' AIRFLOW_CTX_EXECUTION_DATE='2025-11-06T18:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-06T18:00:00+00:00'
+[2025-11-09T15:49:28.644+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-09T15:49:28.645+0000] {logging_mixin.py:188} INFO - Starting Niftron Data Ingestion...
+[2025-11-09T15:49:28.645+0000] {logging_mixin.py:188} INFO - Fetching stock list from database...
+[2025-11-09T15:49:29.739+0000] {logging_mixin.py:188} INFO - Found 50 stocks to process.
+[2025-11-09T15:49:30.158+0000] {logging_mixin.py:188} INFO - --- Processing ADANIENT.NS ---
+[2025-11-09T15:49:33.230+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for ADANIENT.NS. Columns flattened.
+[2025-11-09T15:49:33.233+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T15:51:01.308+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for ADANIENT.NS.
+[2025-11-09T15:51:01.315+0000] {logging_mixin.py:188} INFO - --- Processing ADANIPORTS.NS ---
+[2025-11-09T15:51:02.068+0000] {logging_mixin.py:188} INFO - Fetched 1236 rows for ADANIPORTS.NS. Columns flattened.
+[2025-11-09T15:51:02.069+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T15:52:35.221+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for ADANIPORTS.NS.
+[2025-11-09T15:52:35.229+0000] {logging_mixin.py:188} INFO - --- Processing APOLLOHOSP.NS ---
+[2025-11-09T15:52:35.843+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for APOLLOHOSP.NS. Columns flattened.
+[2025-11-09T15:52:35.845+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T15:54:02.567+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for APOLLOHOSP.NS.
+[2025-11-09T15:54:02.579+0000] {logging_mixin.py:188} INFO - --- Processing ASIANPAINT.NS ---
+[2025-11-09T15:54:03.237+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for ASIANPAINT.NS. Columns flattened.
+[2025-11-09T15:54:03.238+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T15:55:28.935+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for ASIANPAINT.NS.
+[2025-11-09T15:55:28.943+0000] {logging_mixin.py:188} INFO - --- Processing AXISBANK.NS ---
+[2025-11-09T15:55:29.636+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for AXISBANK.NS. Columns flattened.
+[2025-11-09T15:55:29.638+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T15:57:04.207+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for AXISBANK.NS.
+[2025-11-09T15:57:04.214+0000] {logging_mixin.py:188} INFO - --- Processing BAJAJ-AUTO.NS ---
+[2025-11-09T15:57:04.894+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for BAJAJ-AUTO.NS. Columns flattened.
+[2025-11-09T15:57:04.896+0000] {logging_mixin.py:188} INFO - Cleaned data, 1234 rows remaining.
+[2025-11-09T15:58:30.868+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1234 records for BAJAJ-AUTO.NS.
+[2025-11-09T15:58:30.878+0000] {logging_mixin.py:188} INFO - --- Processing BAJFINANCE.NS ---
+[2025-11-09T15:58:31.587+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for BAJFINANCE.NS. Columns flattened.
+[2025-11-09T15:58:31.588+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:00:05.562+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for BAJFINANCE.NS.
+[2025-11-09T16:00:05.571+0000] {logging_mixin.py:188} INFO - --- Processing BAJAJFINSV.NS ---
+[2025-11-09T16:00:06.237+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for BAJAJFINSV.NS. Columns flattened.
+[2025-11-09T16:00:06.238+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:01:46.306+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for BAJAJFINSV.NS.
+[2025-11-09T16:01:46.311+0000] {logging_mixin.py:188} INFO - --- Processing BPCL.NS ---
+[2025-11-09T16:01:46.978+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for BPCL.NS. Columns flattened.
+[2025-11-09T16:01:46.979+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:03:24.429+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for BPCL.NS.
+[2025-11-09T16:03:24.443+0000] {logging_mixin.py:188} INFO - --- Processing BHARTIARTL.NS ---
+[2025-11-09T16:03:25.173+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for BHARTIARTL.NS. Columns flattened.
+[2025-11-09T16:03:25.175+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:05:01.126+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for BHARTIARTL.NS.
+[2025-11-09T16:05:01.133+0000] {logging_mixin.py:188} INFO - --- Processing BRITANNIA.NS ---
+[2025-11-09T16:05:02.092+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for BRITANNIA.NS. Columns flattened.
+[2025-11-09T16:05:02.093+0000] {logging_mixin.py:188} INFO - Cleaned data, 1232 rows remaining.
+[2025-11-09T16:06:39.995+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1232 records for BRITANNIA.NS.
+[2025-11-09T16:06:40.003+0000] {logging_mixin.py:188} INFO - --- Processing CIPLA.NS ---
+[2025-11-09T16:06:41.375+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for CIPLA.NS. Columns flattened.
+[2025-11-09T16:06:41.377+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:08:19.497+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for CIPLA.NS.
+[2025-11-09T16:08:19.503+0000] {logging_mixin.py:188} INFO - --- Processing COALINDIA.NS ---
+[2025-11-09T16:08:20.155+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for COALINDIA.NS. Columns flattened.
+[2025-11-09T16:08:20.156+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:10:00.052+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for COALINDIA.NS.
+[2025-11-09T16:10:00.064+0000] {logging_mixin.py:188} INFO - --- Processing DIVISLAB.NS ---
+[2025-11-09T16:10:00.955+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for DIVISLAB.NS. Columns flattened.
+[2025-11-09T16:10:00.962+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:11:42.486+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for DIVISLAB.NS.
+[2025-11-09T16:11:42.490+0000] {logging_mixin.py:188} INFO - --- Processing DRREDDY.NS ---
+[2025-11-09T16:11:43.273+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for DRREDDY.NS. Columns flattened.
+[2025-11-09T16:11:43.274+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:13:33.014+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for DRREDDY.NS.
+[2025-11-09T16:13:33.020+0000] {logging_mixin.py:188} INFO - --- Processing EICHERMOT.NS ---
+[2025-11-09T16:13:33.711+0000] {logging_mixin.py:188} INFO - Fetched 1236 rows for EICHERMOT.NS. Columns flattened.
+[2025-11-09T16:13:33.714+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:15:11.664+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for EICHERMOT.NS.
+[2025-11-09T16:15:11.675+0000] {logging_mixin.py:188} INFO - --- Processing GRASIM.NS ---
+[2025-11-09T16:15:12.704+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for GRASIM.NS. Columns flattened.
+[2025-11-09T16:15:12.705+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:16:51.978+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for GRASIM.NS.
+[2025-11-09T16:16:52.005+0000] {logging_mixin.py:188} INFO - --- Processing HCLTECH.NS ---
+[2025-11-09T16:16:53.616+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for HCLTECH.NS. Columns flattened.
+[2025-11-09T16:16:53.617+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:18:35.958+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for HCLTECH.NS.
+[2025-11-09T16:18:35.969+0000] {logging_mixin.py:188} INFO - --- Processing HDFCBANK.NS ---
+[2025-11-09T16:18:36.675+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for HDFCBANK.NS. Columns flattened.
+[2025-11-09T16:18:36.676+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:20:18.508+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for HDFCBANK.NS.
+[2025-11-09T16:20:18.534+0000] {logging_mixin.py:188} INFO - --- Processing HDFCLIFE.NS ---
+[2025-11-09T16:20:19.263+0000] {logging_mixin.py:188} INFO - Fetched 1236 rows for HDFCLIFE.NS. Columns flattened.
+[2025-11-09T16:20:19.265+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:22:12.317+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for HDFCLIFE.NS.
+[2025-11-09T16:22:12.322+0000] {logging_mixin.py:188} INFO - --- Processing HEROMOTOCO.NS ---
+[2025-11-09T16:22:12.950+0000] {logging_mixin.py:188} INFO - Fetched 1236 rows for HEROMOTOCO.NS. Columns flattened.
+[2025-11-09T16:22:12.951+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:23:55.068+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for HEROMOTOCO.NS.
+[2025-11-09T16:23:55.080+0000] {logging_mixin.py:188} INFO - --- Processing HINDALCO.NS ---
+[2025-11-09T16:23:55.897+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for HINDALCO.NS. Columns flattened.
+[2025-11-09T16:23:55.898+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:25:48.879+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for HINDALCO.NS.
+[2025-11-09T16:25:48.885+0000] {logging_mixin.py:188} INFO - --- Processing HINDUNILVR.NS ---
+[2025-11-09T16:25:53.391+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for HINDUNILVR.NS. Columns flattened.
+[2025-11-09T16:25:53.392+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:27:37.211+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for HINDUNILVR.NS.
+[2025-11-09T16:27:37.218+0000] {logging_mixin.py:188} INFO - --- Processing ICICIBANK.NS ---
+[2025-11-09T16:27:38.119+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for ICICIBANK.NS. Columns flattened.
+[2025-11-09T16:27:38.120+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:29:21.963+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for ICICIBANK.NS.
+[2025-11-09T16:29:21.973+0000] {logging_mixin.py:188} INFO - --- Processing ITC.NS ---
+[2025-11-09T16:29:22.579+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for ITC.NS. Columns flattened.
+[2025-11-09T16:29:22.581+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:31:07.079+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for ITC.NS.
+[2025-11-09T16:31:07.090+0000] {logging_mixin.py:188} INFO - --- Processing INDUSINDBK.NS ---
+[2025-11-09T16:31:07.802+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for INDUSINDBK.NS. Columns flattened.
+[2025-11-09T16:31:07.804+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:32:52.140+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for INDUSINDBK.NS.
+[2025-11-09T16:32:52.148+0000] {logging_mixin.py:188} INFO - --- Processing INFY.NS ---
+[2025-11-09T16:32:52.920+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for INFY.NS. Columns flattened.
+[2025-11-09T16:32:52.922+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:34:35.029+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for INFY.NS.
+[2025-11-09T16:34:35.049+0000] {logging_mixin.py:188} INFO - --- Processing JSWSTEEL.NS ---
+[2025-11-09T16:34:35.608+0000] {logging_mixin.py:188} INFO - Fetched 1236 rows for JSWSTEEL.NS. Columns flattened.
+[2025-11-09T16:34:35.610+0000] {logging_mixin.py:188} INFO - Cleaned data, 1232 rows remaining.
+[2025-11-09T16:36:23.617+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1232 records for JSWSTEEL.NS.
+[2025-11-09T16:36:23.631+0000] {logging_mixin.py:188} INFO - --- Processing KOTAKBANK.NS ---
+[2025-11-09T16:36:24.236+0000] {logging_mixin.py:188} INFO - Fetched 1236 rows for KOTAKBANK.NS. Columns flattened.
+[2025-11-09T16:36:24.238+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:38:16.584+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for KOTAKBANK.NS.
+[2025-11-09T16:38:16.593+0000] {logging_mixin.py:188} INFO - --- Processing LTIM.NS ---
+[2025-11-09T16:38:17.159+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for LTIM.NS. Columns flattened.
+[2025-11-09T16:38:17.161+0000] {logging_mixin.py:188} INFO - Cleaned data, 1232 rows remaining.
+[2025-11-09T16:40:01.019+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1232 records for LTIM.NS.
+[2025-11-09T16:40:01.036+0000] {logging_mixin.py:188} INFO - --- Processing LT.NS ---
+[2025-11-09T16:40:01.818+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for LT.NS. Columns flattened.
+[2025-11-09T16:40:01.819+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:41:52.281+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for LT.NS.
+[2025-11-09T16:41:52.293+0000] {logging_mixin.py:188} INFO - --- Processing M&M.NS ---
+[2025-11-09T16:41:52.869+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for M&M.NS. Columns flattened.
+[2025-11-09T16:41:52.870+0000] {logging_mixin.py:188} INFO - Cleaned data, 1234 rows remaining.
+[2025-11-09T16:43:34.845+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1234 records for M&M.NS.
+[2025-11-09T16:43:34.850+0000] {logging_mixin.py:188} INFO - --- Processing MARUTI.NS ---
+[2025-11-09T16:43:35.419+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for MARUTI.NS. Columns flattened.
+[2025-11-09T16:43:35.420+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:45:24.218+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for MARUTI.NS.
+[2025-11-09T16:45:24.230+0000] {logging_mixin.py:188} INFO - --- Processing NTPC.NS ---
+[2025-11-09T16:45:24.851+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for NTPC.NS. Columns flattened.
+[2025-11-09T16:45:24.853+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:47:04.246+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for NTPC.NS.
+[2025-11-09T16:47:04.257+0000] {logging_mixin.py:188} INFO - --- Processing NESTLEIND.NS ---
+[2025-11-09T16:47:04.850+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for NESTLEIND.NS. Columns flattened.
+[2025-11-09T16:47:04.851+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:48:50.535+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for NESTLEIND.NS.
+[2025-11-09T16:48:50.541+0000] {logging_mixin.py:188} INFO - --- Processing ONGC.NS ---
+[2025-11-09T16:48:51.155+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for ONGC.NS. Columns flattened.
+[2025-11-09T16:48:51.156+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:50:35.703+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for ONGC.NS.
+[2025-11-09T16:50:35.711+0000] {logging_mixin.py:188} INFO - --- Processing POWERGRID.NS ---
+[2025-11-09T16:50:36.542+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for POWERGRID.NS. Columns flattened.
+[2025-11-09T16:50:36.543+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:52:26.730+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for POWERGRID.NS.
+[2025-11-09T16:52:26.736+0000] {logging_mixin.py:188} INFO - --- Processing RELIANCE.NS ---
+[2025-11-09T16:52:27.533+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for RELIANCE.NS. Columns flattened.
+[2025-11-09T16:52:27.535+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:54:13.419+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for RELIANCE.NS.
+[2025-11-09T16:54:13.436+0000] {logging_mixin.py:188} INFO - --- Processing SBILIFE.NS ---
+[2025-11-09T16:54:15.836+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for SBILIFE.NS. Columns flattened.
+[2025-11-09T16:54:15.838+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:56:04.159+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for SBILIFE.NS.
+[2025-11-09T16:56:04.166+0000] {logging_mixin.py:188} INFO - --- Processing SBIN.NS ---
+[2025-11-09T16:56:04.889+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for SBIN.NS. Columns flattened.
+[2025-11-09T16:56:04.891+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:57:53.465+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for SBIN.NS.
+[2025-11-09T16:57:53.472+0000] {logging_mixin.py:188} INFO - --- Processing SUNPHARMA.NS ---
+[2025-11-09T16:57:54.125+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for SUNPHARMA.NS. Columns flattened.
+[2025-11-09T16:57:54.126+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T16:59:37.257+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for SUNPHARMA.NS.
+[2025-11-09T16:59:37.267+0000] {logging_mixin.py:188} INFO - --- Processing TCS.NS ---
+[2025-11-09T16:59:38.225+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for TCS.NS. Columns flattened.
+[2025-11-09T16:59:38.227+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T17:01:26.204+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for TCS.NS.
+[2025-11-09T17:01:26.221+0000] {logging_mixin.py:188} INFO - --- Processing TATACONSUM.NS ---
+[2025-11-09T17:01:26.793+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for TATACONSUM.NS. Columns flattened.
+[2025-11-09T17:01:26.797+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T17:03:10.402+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for TATACONSUM.NS.
+[2025-11-09T17:03:10.409+0000] {logging_mixin.py:188} INFO - --- Processing TATAMOTORS.NS ---
+[2025-11-09T17:03:11.112+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for TATAMOTORS.NS. Columns flattened.
+[2025-11-09T17:03:11.113+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T17:04:56.637+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for TATAMOTORS.NS.
+[2025-11-09T17:04:56.642+0000] {logging_mixin.py:188} INFO - --- Processing TATASTEEL.NS ---
+[2025-11-09T17:05:01.314+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for TATASTEEL.NS. Columns flattened.
+[2025-11-09T17:05:01.316+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T17:06:45.315+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for TATASTEEL.NS.
+[2025-11-09T17:06:45.322+0000] {logging_mixin.py:188} INFO - --- Processing TECHM.NS ---
+[2025-11-09T17:06:45.949+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for TECHM.NS. Columns flattened.
+[2025-11-09T17:06:45.950+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T17:08:27.729+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for TECHM.NS.
+[2025-11-09T17:08:27.738+0000] {logging_mixin.py:188} INFO - --- Processing TITAN.NS ---
+[2025-11-09T17:08:28.922+0000] {logging_mixin.py:188} INFO - Fetched 1236 rows for TITAN.NS. Columns flattened.
+[2025-11-09T17:08:28.925+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T17:10:21.337+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for TITAN.NS.
+[2025-11-09T17:10:21.343+0000] {logging_mixin.py:188} INFO - --- Processing ULTRACEMCO.NS ---
+[2025-11-09T17:10:25.656+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for ULTRACEMCO.NS. Columns flattened.
+[2025-11-09T17:10:25.658+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T17:12:12.736+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for ULTRACEMCO.NS.
+[2025-11-09T17:12:12.749+0000] {logging_mixin.py:188} INFO - --- Processing UPL.NS ---
+[2025-11-09T17:12:13.408+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for UPL.NS. Columns flattened.
+[2025-11-09T17:12:13.409+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T17:14:04.154+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for UPL.NS.
+[2025-11-09T17:14:04.165+0000] {logging_mixin.py:188} INFO - --- Processing WIPRO.NS ---
+[2025-11-09T17:14:04.761+0000] {logging_mixin.py:188} INFO - Fetched 1237 rows for WIPRO.NS. Columns flattened.
+[2025-11-09T17:14:04.762+0000] {logging_mixin.py:188} INFO - Cleaned data, 1235 rows remaining.
+[2025-11-09T17:15:53.212+0000] {logging_mixin.py:188} INFO - Successfully processed and stored 1235 records for WIPRO.NS.
+[2025-11-09T17:15:53.242+0000] {logging_mixin.py:188} INFO - 
+--- Data ingestion complete! ---
+[2025-11-09T17:15:53.246+0000] {logging_mixin.py:188} INFO - Niftron Data Ingestion Finished.
+[2025-11-09T17:15:53.252+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-11-09T17:15:53.287+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-09T17:15:53.513+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=niftron_daily_pipeline, task_id=ingest_data, run_id=scheduled__2025-11-06T18:00:00+00:00, execution_date=20251106T180000, start_date=20251109T154928, end_date=20251109T171553
+[2025-11-09T17:15:53.680+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-11-09T17:15:53.797+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-11-09T17:15:53.798+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,323 @@
+[2025-11-09T17:15:58.333+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-09T17:15:58.354+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: niftron_daily_pipeline.process_features scheduled__2025-11-06T18:00:00+00:00 [queued]>
+[2025-11-09T17:15:58.358+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: niftron_daily_pipeline.process_features scheduled__2025-11-06T18:00:00+00:00 [queued]>
+[2025-11-09T17:15:58.358+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-09T17:15:58.363+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): process_features> on 2025-11-06 18:00:00+00:00
+[2025-11-09T17:15:58.374+0000] {standard_task_runner.py:63} INFO - Started process 153 to run task
+[2025-11-09T17:15:58.377+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'niftron_daily_pipeline', 'process_features', 'scheduled__2025-11-06T18:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/niftron_pipeline_dagold.py', '--cfg-path', '/tmp/tmp4xlr6_7o']
+[2025-11-09T17:15:58.381+0000] {standard_task_runner.py:91} INFO - Job 4: Subtask process_features
+[2025-11-09T17:15:58.426+0000] {task_command.py:426} INFO - Running <TaskInstance: niftron_daily_pipeline.process_features scheduled__2025-11-06T18:00:00+00:00 [running]> on host a7068366ba2f
+[2025-11-09T17:15:58.484+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='niftron_daily_pipeline' AIRFLOW_CTX_TASK_ID='process_features' AIRFLOW_CTX_EXECUTION_DATE='2025-11-06T18:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-06T18:00:00+00:00'
+[2025-11-09T17:15:58.485+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-09T17:15:58.485+0000] {logging_mixin.py:188} INFO - Starting Niftron Feature Engineering...
+[2025-11-09T17:15:58.486+0000] {logging_mixin.py:188} INFO - Fetching stock list for feature calculation...
+[2025-11-09T17:15:59.665+0000] {logging_mixin.py:188} INFO - Found 50 stocks to process.
+[2025-11-09T17:16:00.079+0000] {logging_mixin.py:188} INFO - --- Processing features for ADANIENT (ID: 1) ---
+[2025-11-09T17:16:00.082+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:00.765+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for ADANIENT.
+[2025-11-09T17:16:01.954+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for ADANIENT.
+[2025-11-09T17:16:01.958+0000] {logging_mixin.py:188} INFO - --- Processing features for ADANIPORTS (ID: 2) ---
+[2025-11-09T17:16:01.960+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:02.260+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for ADANIPORTS.
+[2025-11-09T17:16:03.142+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for ADANIPORTS.
+[2025-11-09T17:16:03.145+0000] {logging_mixin.py:188} INFO - --- Processing features for APOLLOHOSP (ID: 3) ---
+[2025-11-09T17:16:03.147+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:03.436+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for APOLLOHOSP.
+[2025-11-09T17:16:04.414+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for APOLLOHOSP.
+[2025-11-09T17:16:04.415+0000] {logging_mixin.py:188} INFO - --- Processing features for ASIANPAINT (ID: 4) ---
+[2025-11-09T17:16:04.416+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:04.813+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for ASIANPAINT.
+[2025-11-09T17:16:06.246+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for ASIANPAINT.
+[2025-11-09T17:16:06.247+0000] {logging_mixin.py:188} INFO - --- Processing features for AXISBANK (ID: 5) ---
+[2025-11-09T17:16:06.247+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:06.839+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for AXISBANK.
+[2025-11-09T17:16:07.704+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for AXISBANK.
+[2025-11-09T17:16:07.705+0000] {logging_mixin.py:188} INFO - --- Processing features for BAJAJ-AUTO (ID: 6) ---
+[2025-11-09T17:16:07.706+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:09.002+0000] {logging_mixin.py:188} INFO - Calculated 1050 rows of features for BAJAJ-AUTO.
+[2025-11-09T17:16:09.857+0000] {logging_mixin.py:188} INFO - Successfully stored 1050 feature records for BAJAJ-AUTO.
+[2025-11-09T17:16:09.858+0000] {logging_mixin.py:188} INFO - --- Processing features for BAJFINANCE (ID: 7) ---
+[2025-11-09T17:16:09.859+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:10.880+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for BAJFINANCE.
+[2025-11-09T17:16:12.106+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for BAJFINANCE.
+[2025-11-09T17:16:12.109+0000] {logging_mixin.py:188} INFO - --- Processing features for BAJAJFINSV (ID: 8) ---
+[2025-11-09T17:16:12.111+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:13.236+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for BAJAJFINSV.
+[2025-11-09T17:16:14.380+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for BAJAJFINSV.
+[2025-11-09T17:16:14.381+0000] {logging_mixin.py:188} INFO - --- Processing features for BPCL (ID: 9) ---
+[2025-11-09T17:16:14.382+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:15.344+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for BPCL.
+[2025-11-09T17:16:16.486+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for BPCL.
+[2025-11-09T17:16:16.486+0000] {logging_mixin.py:188} INFO - --- Processing features for BHARTIARTL (ID: 10) ---
+[2025-11-09T17:16:16.487+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:17.831+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for BHARTIARTL.
+[2025-11-09T17:16:19.001+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for BHARTIARTL.
+[2025-11-09T17:16:19.005+0000] {logging_mixin.py:188} INFO - --- Processing features for BRITANNIA (ID: 11) ---
+[2025-11-09T17:16:19.006+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:21.313+0000] {logging_mixin.py:188} INFO - Calculated 1048 rows of features for BRITANNIA.
+[2025-11-09T17:16:22.197+0000] {logging_mixin.py:188} INFO - Successfully stored 1048 feature records for BRITANNIA.
+[2025-11-09T17:16:22.199+0000] {logging_mixin.py:188} INFO - --- Processing features for CIPLA (ID: 12) ---
+[2025-11-09T17:16:22.199+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:23.319+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for CIPLA.
+[2025-11-09T17:16:24.862+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for CIPLA.
+[2025-11-09T17:16:24.864+0000] {logging_mixin.py:188} INFO - --- Processing features for COALINDIA (ID: 13) ---
+[2025-11-09T17:16:24.865+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:25.891+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for COALINDIA.
+[2025-11-09T17:16:26.758+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for COALINDIA.
+[2025-11-09T17:16:26.760+0000] {logging_mixin.py:188} INFO - --- Processing features for DIVISLAB (ID: 14) ---
+[2025-11-09T17:16:26.761+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:27.970+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for DIVISLAB.
+[2025-11-09T17:16:28.826+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for DIVISLAB.
+[2025-11-09T17:16:28.829+0000] {logging_mixin.py:188} INFO - --- Processing features for DRREDDY (ID: 15) ---
+[2025-11-09T17:16:28.830+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:29.729+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for DRREDDY.
+[2025-11-09T17:16:31.173+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for DRREDDY.
+[2025-11-09T17:16:31.174+0000] {logging_mixin.py:188} INFO - --- Processing features for EICHERMOT (ID: 16) ---
+[2025-11-09T17:16:31.175+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:32.035+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for EICHERMOT.
+[2025-11-09T17:16:33.211+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for EICHERMOT.
+[2025-11-09T17:16:33.215+0000] {logging_mixin.py:188} INFO - --- Processing features for GRASIM (ID: 17) ---
+[2025-11-09T17:16:33.215+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:34.237+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for GRASIM.
+[2025-11-09T17:16:35.104+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for GRASIM.
+[2025-11-09T17:16:35.105+0000] {logging_mixin.py:188} INFO - --- Processing features for HCLTECH (ID: 18) ---
+[2025-11-09T17:16:35.107+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:36.591+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for HCLTECH.
+[2025-11-09T17:16:38.135+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for HCLTECH.
+[2025-11-09T17:16:38.136+0000] {logging_mixin.py:188} INFO - --- Processing features for HDFCBANK (ID: 19) ---
+[2025-11-09T17:16:38.137+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:39.116+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for HDFCBANK.
+[2025-11-09T17:16:39.996+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for HDFCBANK.
+[2025-11-09T17:16:39.998+0000] {logging_mixin.py:188} INFO - --- Processing features for HDFCLIFE (ID: 20) ---
+[2025-11-09T17:16:40.000+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:40.599+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for HDFCLIFE.
+[2025-11-09T17:16:41.457+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for HDFCLIFE.
+[2025-11-09T17:16:41.458+0000] {logging_mixin.py:188} INFO - --- Processing features for HEROMOTOCO (ID: 21) ---
+[2025-11-09T17:16:41.459+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:42.159+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for HEROMOTOCO.
+[2025-11-09T17:16:43.036+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for HEROMOTOCO.
+[2025-11-09T17:16:43.037+0000] {logging_mixin.py:188} INFO - --- Processing features for HINDALCO (ID: 22) ---
+[2025-11-09T17:16:43.038+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:44.446+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for HINDALCO.
+[2025-11-09T17:16:45.604+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for HINDALCO.
+[2025-11-09T17:16:45.605+0000] {logging_mixin.py:188} INFO - --- Processing features for HINDUNILVR (ID: 23) ---
+[2025-11-09T17:16:45.606+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:47.030+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for HINDUNILVR.
+[2025-11-09T17:16:48.184+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for HINDUNILVR.
+[2025-11-09T17:16:48.185+0000] {logging_mixin.py:188} INFO - --- Processing features for ICICIBANK (ID: 24) ---
+[2025-11-09T17:16:48.186+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:49.629+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for ICICIBANK.
+[2025-11-09T17:16:51.409+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for ICICIBANK.
+[2025-11-09T17:16:51.411+0000] {logging_mixin.py:188} INFO - --- Processing features for ITC (ID: 25) ---
+[2025-11-09T17:16:51.412+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:52.536+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for ITC.
+[2025-11-09T17:16:53.411+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for ITC.
+[2025-11-09T17:16:53.412+0000] {logging_mixin.py:188} INFO - --- Processing features for INDUSINDBK (ID: 26) ---
+[2025-11-09T17:16:53.413+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:54.436+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for INDUSINDBK.
+[2025-11-09T17:16:55.289+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for INDUSINDBK.
+[2025-11-09T17:16:55.291+0000] {logging_mixin.py:188} INFO - --- Processing features for INFY (ID: 27) ---
+[2025-11-09T17:16:55.292+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:56.068+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for INFY.
+[2025-11-09T17:16:57.857+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for INFY.
+[2025-11-09T17:16:57.858+0000] {logging_mixin.py:188} INFO - --- Processing features for JSWSTEEL (ID: 28) ---
+[2025-11-09T17:16:57.858+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:16:59.264+0000] {logging_mixin.py:188} INFO - Calculated 1048 rows of features for JSWSTEEL.
+[2025-11-09T17:17:00.569+0000] {logging_mixin.py:188} INFO - Successfully stored 1048 feature records for JSWSTEEL.
+[2025-11-09T17:17:00.570+0000] {logging_mixin.py:188} INFO - --- Processing features for KOTAKBANK (ID: 29) ---
+[2025-11-09T17:17:00.570+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:02.213+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for KOTAKBANK.
+[2025-11-09T17:17:03.625+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for KOTAKBANK.
+[2025-11-09T17:17:03.626+0000] {logging_mixin.py:188} INFO - --- Processing features for LTIM (ID: 30) ---
+[2025-11-09T17:17:03.627+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:04.733+0000] {logging_mixin.py:188} INFO - Calculated 1048 rows of features for LTIM.
+[2025-11-09T17:17:05.861+0000] {logging_mixin.py:188} INFO - Successfully stored 1048 feature records for LTIM.
+[2025-11-09T17:17:05.866+0000] {logging_mixin.py:188} INFO - --- Processing features for LT (ID: 31) ---
+[2025-11-09T17:17:05.869+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:07.848+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for LT.
+[2025-11-09T17:17:08.725+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for LT.
+[2025-11-09T17:17:08.728+0000] {logging_mixin.py:188} INFO - --- Processing features for M&M (ID: 32) ---
+[2025-11-09T17:17:08.745+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:09.695+0000] {logging_mixin.py:188} INFO - Calculated 1050 rows of features for M&M.
+[2025-11-09T17:17:10.828+0000] {logging_mixin.py:188} INFO - Successfully stored 1050 feature records for M&M.
+[2025-11-09T17:17:10.829+0000] {logging_mixin.py:188} INFO - --- Processing features for MARUTI (ID: 33) ---
+[2025-11-09T17:17:10.831+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:11.582+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for MARUTI.
+[2025-11-09T17:17:13.003+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for MARUTI.
+[2025-11-09T17:17:13.005+0000] {logging_mixin.py:188} INFO - --- Processing features for NTPC (ID: 34) ---
+[2025-11-09T17:17:13.006+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:14.304+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for NTPC.
+[2025-11-09T17:17:15.165+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for NTPC.
+[2025-11-09T17:17:15.166+0000] {logging_mixin.py:188} INFO - --- Processing features for NESTLEIND (ID: 35) ---
+[2025-11-09T17:17:15.168+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:16.354+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for NESTLEIND.
+[2025-11-09T17:17:17.482+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for NESTLEIND.
+[2025-11-09T17:17:17.483+0000] {logging_mixin.py:188} INFO - --- Processing features for ONGC (ID: 36) ---
+[2025-11-09T17:17:17.483+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:18.682+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for ONGC.
+[2025-11-09T17:17:19.796+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for ONGC.
+[2025-11-09T17:17:19.798+0000] {logging_mixin.py:188} INFO - --- Processing features for POWERGRID (ID: 37) ---
+[2025-11-09T17:17:19.814+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:20.866+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for POWERGRID.
+[2025-11-09T17:17:21.722+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for POWERGRID.
+[2025-11-09T17:17:21.724+0000] {logging_mixin.py:188} INFO - --- Processing features for RELIANCE (ID: 38) ---
+[2025-11-09T17:17:21.725+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:23.078+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for RELIANCE.
+[2025-11-09T17:17:23.935+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for RELIANCE.
+[2025-11-09T17:17:23.938+0000] {logging_mixin.py:188} INFO - --- Processing features for SBILIFE (ID: 39) ---
+[2025-11-09T17:17:23.939+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:25.428+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for SBILIFE.
+[2025-11-09T17:17:26.292+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for SBILIFE.
+[2025-11-09T17:17:26.293+0000] {logging_mixin.py:188} INFO - --- Processing features for SBIN (ID: 40) ---
+[2025-11-09T17:17:26.294+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:27.310+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for SBIN.
+[2025-11-09T17:17:28.158+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for SBIN.
+[2025-11-09T17:17:28.162+0000] {logging_mixin.py:188} INFO - --- Processing features for SUNPHARMA (ID: 41) ---
+[2025-11-09T17:17:28.164+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:29.283+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for SUNPHARMA.
+[2025-11-09T17:17:30.590+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for SUNPHARMA.
+[2025-11-09T17:17:30.590+0000] {logging_mixin.py:188} INFO - --- Processing features for TCS (ID: 42) ---
+[2025-11-09T17:17:30.591+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:31.788+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for TCS.
+[2025-11-09T17:17:33.603+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for TCS.
+[2025-11-09T17:17:33.604+0000] {logging_mixin.py:188} INFO - --- Processing features for TATACONSUM (ID: 43) ---
+[2025-11-09T17:17:33.605+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:34.934+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for TATACONSUM.
+[2025-11-09T17:17:36.154+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for TATACONSUM.
+[2025-11-09T17:17:36.156+0000] {logging_mixin.py:188} INFO - --- Processing features for TATAMOTORS (ID: 44) ---
+[2025-11-09T17:17:36.160+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:37.015+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for TATAMOTORS.
+[2025-11-09T17:17:38.431+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for TATAMOTORS.
+[2025-11-09T17:17:38.434+0000] {logging_mixin.py:188} INFO - --- Processing features for TATASTEEL (ID: 45) ---
+[2025-11-09T17:17:38.436+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:39.516+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for TATASTEEL.
+[2025-11-09T17:17:40.379+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for TATASTEEL.
+[2025-11-09T17:17:40.380+0000] {logging_mixin.py:188} INFO - --- Processing features for TECHM (ID: 46) ---
+[2025-11-09T17:17:40.381+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:41.440+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for TECHM.
+[2025-11-09T17:17:42.294+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for TECHM.
+[2025-11-09T17:17:42.296+0000] {logging_mixin.py:188} INFO - --- Processing features for TITAN (ID: 47) ---
+[2025-11-09T17:17:42.296+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:42.878+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for TITAN.
+[2025-11-09T17:17:43.995+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for TITAN.
+[2025-11-09T17:17:43.997+0000] {logging_mixin.py:188} INFO - --- Processing features for ULTRACEMCO (ID: 48) ---
+[2025-11-09T17:17:43.999+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:44.591+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for ULTRACEMCO.
+[2025-11-09T17:17:46.284+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for ULTRACEMCO.
+[2025-11-09T17:17:46.285+0000] {logging_mixin.py:188} INFO - --- Processing features for UPL (ID: 49) ---
+[2025-11-09T17:17:46.286+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:47.753+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for UPL.
+[2025-11-09T17:17:48.883+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for UPL.
+[2025-11-09T17:17:48.885+0000] {logging_mixin.py:188} INFO - --- Processing features for WIPRO (ID: 50) ---
+[2025-11-09T17:17:48.887+0000] {warnings.py:110} WARNING - /opt/***/niftron/processing/main.py:56: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn, params=(stock_id,), index_col='date')
+
+[2025-11-09T17:17:49.592+0000] {logging_mixin.py:188} INFO - Calculated 1051 rows of features for WIPRO.
+[2025-11-09T17:17:50.452+0000] {logging_mixin.py:188} INFO - Successfully stored 1051 feature records for WIPRO.
+[2025-11-09T17:17:50.455+0000] {logging_mixin.py:188} INFO - 
+--- Feature engineering complete! ---
+[2025-11-09T17:17:50.456+0000] {logging_mixin.py:188} INFO - Niftron Feature Engineering Finished.
+[2025-11-09T17:17:50.458+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-11-09T17:17:50.463+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-09T17:17:50.487+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=niftron_daily_pipeline, task_id=process_features, run_id=scheduled__2025-11-06T18:00:00+00:00, execution_date=20251106T180000, start_date=20251109T171558, end_date=20251109T171750
+[2025-11-09T17:17:50.568+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-11-09T17:17:50.593+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-11-09T17:17:50.594+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

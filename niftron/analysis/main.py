@@ -27,10 +27,6 @@ STRATEGY_WEIGHTS = {
 def get_all_features():
     """Fetches all features for all stocks from the database."""
     print("Fetching all features from the database...")
-    
-    # --- THE ROOT CAUSE FIX IS HERE ---
-    # Explicitly list columns to avoid duplicating 'stock_id' from the join.
-    # Do NOT use 'f.*' when joining tables with common column names.
     query = """
         SELECT 
             s.stock_id, 

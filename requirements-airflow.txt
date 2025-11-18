@@ -1,0 +1,15 @@
+# requirements-airflow.txt (FINAL CORRECT VERSION)
+
+# --- Stable Airflow Version ---
+apache-airflow[postgres,celery]==2.9.2
+
+# --- Core Data Science & ML ---
+numpy==1.26.4
+scikit-learn==1.7.2
+joblib
+pandas
+yfinance
+google-generativeai
+cachetools
+python-dotenv
+psycopg2-binary

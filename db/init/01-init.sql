@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS daily_price_data (
     close_price NUMERIC(10, 2),
     adjusted_close_price NUMERIC(10, 2),
     volume BIGINT,
-    UNIQUE (stock_id, date) -- Ensure only one entry per stock per day
+    UNIQUE (stock_id, date) 
 );
 
 -- Create the table for calculated features/indicators
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS recommendations (
     rank INTEGER NOT NULL,
     stock_id INTEGER NOT NULL REFERENCES stocks(stock_id),
     final_score NUMERIC(6, 3),
-    algorithm_scores JSONB, -- Store individual algo scores as a JSON object
+    algorithm_scores JSONB, 
     UNIQUE (date, rank)
 );
 
@@ -101,4 +101,4 @@ INSERT INTO stocks (symbol, company_name) VALUES
     ('ULTRACEMCO', 'UltraTech Cement Ltd.'),
     ('UPL', 'UPL Ltd.'),
     ('WIPRO', 'Wipro Ltd.')
-ON CONFLICT (symbol) DO NOTHING; -- This ensures if you run it again, it won't fail
+ON CONFLICT (symbol) DO NOTHING; 

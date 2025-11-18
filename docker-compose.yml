@@ -1,0 +1,132 @@
+services:
+  postgres:
+    image: postgres:13
+    container_name: airflow_postgres
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 5s
+      retries: 5
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    restart: always
+
+  redis:
+    image: redis:7.2-bookworm
+    container_name: airflow_redis
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      retries: 50
+    restart: always
+
+  api:
+    container_name: niftron_api_service
+    image: niftron-api-image
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    env_file: .env  # Loads variables from your .env file
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./niftron:/app/niftron
+    restart: always
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # This service builds the shared image for all Airflow components
+  airflow-webserver:
+    image: niftron-airflow-image
+    build:
+      context: .
+      dockerfile: airflow.Dockerfile
+    container_name: airflow_webserver
+    command: airflow webserver
+    ports:
+      - "8080:8080"
+    restart: always
+    env_file: &airflow-env-file .env # <-- ANCHOR for the env_file
+    environment: &airflow-environment
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CELERY__BROKER_URL: redis://redis:6379/1
+      AIRFLOW__CORE__FERNET_KEY: 'p_2_E6_hU8d7-s2y2tF-g_gJk7-32GfA_yJc3-kYhX0='
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      PYTHONPATH: /opt/airflow
+    volumes: &airflow-volumes
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./niftron:/opt/airflow/niftron
+    user: "50000:0"
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+
+  # All subsequent services USE the image built by the webserver and REUSE the config
+  airflow-scheduler:
+    image: niftron-airflow-image
+    container_name: airflow_scheduler
+    command: airflow scheduler
+    restart: always
+    env_file: *airflow-env-file      # <-- REUSE the env_file anchor
+    environment: *airflow-environment  # REUSE the environment anchor
+    volumes: *airflow-volumes          # REUSE the volumes anchor
+    user: "50000:0"
+    depends_on:
+      airflow-webserver: { condition: service_started }
+
+  airflow-worker:
+    image: niftron-airflow-image
+    container_name: airflow_worker
+    command: airflow celery worker
+    restart: always
+    env_file: *airflow-env-file      # <-- REUSE the env_file anchor
+    environment: *airflow-environment
+    volumes: *airflow-volumes
+    user: "50000:0"
+    depends_on:
+      airflow-webserver: { condition: service_started }
+
+  airflow-triggerer:
+    image: niftron-airflow-image
+    container_name: airflow_triggerer
+    command: airflow triggerer
+    restart: always
+    env_file: *airflow-env-file      # <-- REUSE the env_file anchor
+    environment: *airflow-environment
+    volumes: *airflow-volumes
+    user: "50000:0"
+    depends_on:
+      airflow-webserver: { condition: service_started }
+
+  airflow-init:
+    image: niftron-airflow-image
+    container_name: airflow_init
+    command:
+      - /bin/bash
+      - -c
+      - |
+        airflow db init &&
+        airflow users create \
+          --username admin \
+          --firstname Niftron \
+          --lastname Admin \
+          --role Admin \
+          --email admin@niftron.com \
+          --password admin
+    restart: on-failure
+    env_file: *airflow-env-file      # <-- REUSE the env_file anchor
+    environment: *airflow-environment
+    volumes: *airflow-volumes
+    user: "50000:0"
+    depends_on:
+      airflow-webserver: { condition: service_started }
+
+volumes:
+  postgres-db-volume:

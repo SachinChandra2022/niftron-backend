@@ -1,0 +1,1318 @@
+[2025-11-04T00:06:12.941+0000] {processor.py:161} INFO - Started process (PID=43) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T00:06:12.943+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T00:06:12.945+0000] {logging_mixin.py:188} INFO - [2025-11-04T00:06:12.944+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T00:06:12.949+0000] {logging_mixin.py:188} INFO - [2025-11-04T00:06:12.948+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T00:06:12.949+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T00:06:16.246+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 3.312 seconds
+[2025-11-04T00:14:22.608+0000] {processor.py:161} INFO - Started process (PID=44) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T00:14:22.609+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T00:14:22.612+0000] {logging_mixin.py:188} INFO - [2025-11-04T00:14:22.611+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T00:14:22.617+0000] {logging_mixin.py:188} INFO - [2025-11-04T00:14:22.616+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T00:14:22.617+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T00:14:24.092+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.510 seconds
+[2025-11-04T01:03:45.173+0000] {processor.py:161} INFO - Started process (PID=59) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T01:03:45.175+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T01:03:45.178+0000] {logging_mixin.py:188} INFO - [2025-11-04T01:03:45.177+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T01:03:45.186+0000] {logging_mixin.py:188} INFO - [2025-11-04T01:03:45.185+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T01:03:45.186+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T01:03:48.828+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 3.664 seconds
+[2025-11-04T01:15:16.513+0000] {processor.py:161} INFO - Started process (PID=67) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T01:15:16.513+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T01:15:16.516+0000] {logging_mixin.py:188} INFO - [2025-11-04T01:15:16.516+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T01:15:16.521+0000] {logging_mixin.py:188} INFO - [2025-11-04T01:15:16.520+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T01:15:16.522+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T01:15:19.928+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 3.424 seconds
+[2025-11-04T01:15:58.287+0000] {processor.py:161} INFO - Started process (PID=82) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T01:15:58.289+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T01:15:58.292+0000] {logging_mixin.py:188} INFO - [2025-11-04T01:15:58.292+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T01:15:58.298+0000] {logging_mixin.py:188} INFO - [2025-11-04T01:15:58.297+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T01:15:58.298+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T01:15:59.605+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.332 seconds
+[2025-11-04T01:40:03.533+0000] {processor.py:161} INFO - Started process (PID=83) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T01:40:03.534+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T01:40:03.536+0000] {logging_mixin.py:188} INFO - [2025-11-04T01:40:03.536+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T01:40:03.540+0000] {logging_mixin.py:188} INFO - [2025-11-04T01:40:03.539+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T01:40:03.540+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T01:40:04.889+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.361 seconds
+[2025-11-04T01:40:35.837+0000] {processor.py:161} INFO - Started process (PID=91) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T01:40:35.839+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T01:40:35.843+0000] {logging_mixin.py:188} INFO - [2025-11-04T01:40:35.843+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T01:40:35.850+0000] {logging_mixin.py:188} INFO - [2025-11-04T01:40:35.849+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T01:40:35.850+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T01:40:37.207+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.387 seconds
+[2025-11-04T02:16:09.997+0000] {processor.py:161} INFO - Started process (PID=36) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:16:09.998+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T02:16:10.000+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:16:09.999+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:16:10.004+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:16:10.003+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T02:16:10.004+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:16:11.394+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.401 seconds
+[2025-11-04T02:54:57.084+0000] {processor.py:161} INFO - Started process (PID=44) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:54:57.086+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T02:54:57.092+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:54:57.091+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:54:57.097+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:54:57.096+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T02:54:57.098+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:54:59.090+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 2.021 seconds
+[2025-11-04T02:55:29.898+0000] {processor.py:161} INFO - Started process (PID=52) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:55:29.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T02:55:29.903+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:55:29.902+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:55:29.913+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:55:29.912+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T02:55:29.913+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:55:31.418+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.537 seconds
+[2025-11-04T02:56:02.361+0000] {processor.py:161} INFO - Started process (PID=60) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:56:02.362+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T02:56:02.369+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:56:02.368+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:56:02.374+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:56:02.373+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T02:56:02.375+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:56:03.838+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.510 seconds
+[2025-11-04T02:56:34.045+0000] {processor.py:161} INFO - Started process (PID=68) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:56:34.047+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T02:56:34.050+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:56:34.050+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:56:34.057+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:56:34.056+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T02:56:34.058+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:56:35.505+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.481 seconds
+[2025-11-04T02:57:06.195+0000] {processor.py:161} INFO - Started process (PID=76) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:57:06.196+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T02:57:06.200+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:57:06.199+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:57:06.207+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:57:06.206+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T02:57:06.207+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:57:08.724+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 2.542 seconds
+[2025-11-04T02:57:39.113+0000] {processor.py:161} INFO - Started process (PID=84) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:57:39.115+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T02:57:39.120+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:57:39.119+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:57:39.135+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:57:39.130+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T02:57:39.135+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:57:40.572+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.473 seconds
+[2025-11-04T02:58:10.938+0000] {processor.py:161} INFO - Started process (PID=92) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:58:10.941+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T02:58:10.946+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:58:10.946+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:58:10.952+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:58:10.951+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T02:58:10.952+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:58:12.298+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.373 seconds
+[2025-11-04T02:58:43.013+0000] {processor.py:161} INFO - Started process (PID=100) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:58:43.016+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T02:58:43.025+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:58:43.024+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:58:43.033+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:58:43.030+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T02:58:43.033+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:58:45.072+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 2.080 seconds
+[2025-11-04T02:59:15.232+0000] {processor.py:161} INFO - Started process (PID=108) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:59:15.234+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T02:59:15.237+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:59:15.236+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:59:15.243+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:59:15.242+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T02:59:15.244+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:59:16.656+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.437 seconds
+[2025-11-04T02:59:47.195+0000] {processor.py:161} INFO - Started process (PID=116) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:59:47.196+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T02:59:47.205+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:59:47.204+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:59:47.211+0000] {logging_mixin.py:188} INFO - [2025-11-04T02:59:47.210+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T02:59:47.211+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T02:59:48.548+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.368 seconds
+[2025-11-04T03:00:19.421+0000] {processor.py:161} INFO - Started process (PID=124) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:00:19.431+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:00:19.459+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:00:19.452+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:00:19.482+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:00:19.478+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:00:19.484+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:00:21.007+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.647 seconds
+[2025-11-04T03:00:51.846+0000] {processor.py:161} INFO - Started process (PID=132) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:00:51.854+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:00:51.877+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:00:51.872+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:00:51.892+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:00:51.889+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:00:51.893+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:00:53.376+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.565 seconds
+[2025-11-04T03:01:23.995+0000] {processor.py:161} INFO - Started process (PID=140) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:01:23.997+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:01:24.000+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:01:23.999+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:01:24.007+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:01:24.005+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:01:24.007+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:01:25.396+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.414 seconds
+[2025-11-04T03:01:56.326+0000] {processor.py:161} INFO - Started process (PID=148) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:01:56.328+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:01:56.332+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:01:56.331+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:01:56.338+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:01:56.336+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:01:56.339+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:01:57.754+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.436 seconds
+[2025-11-04T03:02:28.420+0000] {processor.py:161} INFO - Started process (PID=156) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:02:28.426+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:02:28.430+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:02:28.430+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:02:28.442+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:02:28.440+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:02:28.443+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:02:29.847+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.440 seconds
+[2025-11-04T03:03:00.475+0000] {processor.py:161} INFO - Started process (PID=164) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:03:00.477+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:03:00.483+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:03:00.480+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:03:00.493+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:03:00.492+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:03:00.494+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:03:01.851+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.389 seconds
+[2025-11-04T03:03:33.055+0000] {processor.py:161} INFO - Started process (PID=172) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:03:33.057+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:03:33.061+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:03:33.060+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:03:33.068+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:03:33.065+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:03:33.068+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:03:34.467+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.425 seconds
+[2025-11-04T03:04:05.608+0000] {processor.py:161} INFO - Started process (PID=180) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:04:05.609+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:04:05.612+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:04:05.612+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:04:05.621+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:04:05.617+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:04:05.622+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:04:06.994+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.402 seconds
+[2025-11-04T03:04:37.513+0000] {processor.py:161} INFO - Started process (PID=188) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:04:37.515+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:04:37.520+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:04:37.520+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:04:37.526+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:04:37.525+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:04:37.527+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:04:38.978+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.473 seconds
+[2025-11-04T03:04:47.853+0000] {processor.py:161} INFO - Started process (PID=189) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:04:47.855+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:04:47.858+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:04:47.857+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:04:47.868+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:04:47.867+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:04:47.868+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:04:49.310+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.473 seconds
+[2025-11-04T03:05:20.447+0000] {processor.py:161} INFO - Started process (PID=197) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:05:20.451+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:05:20.457+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:05:20.456+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:05:20.468+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:05:20.466+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:05:20.468+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:05:21.873+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.438 seconds
+[2025-11-04T03:06:51.472+0000] {processor.py:161} INFO - Started process (PID=44) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:06:51.484+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:06:51.487+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:06:51.486+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:06:51.507+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:06:51.500+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:06:51.507+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:06:53.128+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.688 seconds
+[2025-11-04T03:07:24.691+0000] {processor.py:161} INFO - Started process (PID=52) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:07:24.694+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:07:24.704+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:07:24.698+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:07:24.726+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:07:24.724+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:07:24.726+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:07:27.069+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 2.403 seconds
+[2025-11-04T03:07:57.397+0000] {processor.py:161} INFO - Started process (PID=60) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:07:57.400+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:07:57.409+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:07:57.408+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:07:57.427+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:07:57.425+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:07:57.427+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:07:58.877+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.504 seconds
+[2025-11-04T03:08:29.502+0000] {processor.py:161} INFO - Started process (PID=68) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:08:29.504+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:08:29.541+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:08:29.540+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:08:29.554+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:08:29.550+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:08:29.554+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:08:31.023+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.530 seconds
+[2025-11-04T03:09:01.941+0000] {processor.py:161} INFO - Started process (PID=76) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:09:01.942+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:09:01.946+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:09:01.946+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:09:01.953+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:09:01.952+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:09:01.954+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:09:03.699+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.771 seconds
+[2025-11-04T03:10:57.234+0000] {processor.py:161} INFO - Started process (PID=51) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:10:57.236+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:10:57.244+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:10:57.243+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:10:57.256+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:10:57.252+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:10:57.257+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:10:58.784+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.570 seconds
+[2025-11-04T03:11:28.850+0000] {processor.py:161} INFO - Started process (PID=59) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:11:28.852+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:11:28.855+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:11:28.854+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:11:28.866+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:11:28.863+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:11:28.866+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:11:30.222+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.390 seconds
+[2025-11-04T03:12:00.417+0000] {processor.py:161} INFO - Started process (PID=60) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:12:00.419+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:12:00.425+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:12:00.425+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:12:00.431+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:12:00.430+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:12:00.432+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:12:01.826+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.423 seconds
+[2025-11-04T03:12:32.794+0000] {processor.py:161} INFO - Started process (PID=68) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:12:32.795+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:12:32.798+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:12:32.798+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:12:32.811+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:12:32.808+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:12:32.811+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:12:34.315+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.526 seconds
+[2025-11-04T03:13:05.345+0000] {processor.py:161} INFO - Started process (PID=76) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:13:05.351+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:13:05.355+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:13:05.355+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:13:05.363+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:13:05.360+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:13:05.364+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:13:06.741+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.427 seconds
+[2025-11-04T03:13:37.005+0000] {processor.py:161} INFO - Started process (PID=84) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:13:37.007+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:13:37.017+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:13:37.016+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:13:37.025+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:13:37.023+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:13:37.025+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:13:40.584+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 3.596 seconds
+[2025-11-04T03:14:11.076+0000] {processor.py:161} INFO - Started process (PID=92) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:14:11.078+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:14:11.091+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:14:11.089+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:14:11.102+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:14:11.100+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:14:11.103+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:14:12.505+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.449 seconds
+[2025-11-04T03:14:43.368+0000] {processor.py:161} INFO - Started process (PID=100) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:14:43.371+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:14:43.375+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:14:43.374+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:14:43.383+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:14:43.382+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:14:43.384+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:14:44.800+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.453 seconds
+[2025-11-04T03:15:16.208+0000] {processor.py:161} INFO - Started process (PID=108) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:15:16.209+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:15:16.212+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:15:16.212+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:15:16.220+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:15:16.217+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:15:16.220+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:15:18.672+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 2.475 seconds
+[2025-11-04T03:15:49.576+0000] {processor.py:161} INFO - Started process (PID=116) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:15:49.580+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:15:49.583+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:15:49.582+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:15:49.593+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:15:49.592+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:15:49.594+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:15:50.966+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.398 seconds
+[2025-11-04T03:16:21.763+0000] {processor.py:161} INFO - Started process (PID=124) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:16:21.764+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:16:21.772+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:16:21.771+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:16:21.778+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:16:21.777+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:16:21.778+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:16:23.190+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.454 seconds
+[2025-11-04T03:16:53.749+0000] {processor.py:161} INFO - Started process (PID=132) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:16:53.755+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:16:53.764+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:16:53.762+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:16:53.777+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:16:53.776+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:16:53.778+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:16:55.200+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.463 seconds
+[2025-11-04T03:17:22.274+0000] {processor.py:161} INFO - Started process (PID=140) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:17:22.276+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:17:22.284+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:17:22.283+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:17:22.294+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:17:22.292+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+ModuleNotFoundError: No module named 'niftron.ingestion'
+[2025-11-04T03:17:22.295+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:17:23.766+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.504 seconds
+[2025-11-04T03:18:29.308+0000] {processor.py:161} INFO - Started process (PID=50) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:18:29.336+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:18:29.375+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:18:29.374+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:18:29.425+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:18:29.419+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+  File "/opt/airflow/src/niftron/ingestion/main.py", line 3, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-11-04T03:18:29.427+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:18:30.903+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.669 seconds
+[2025-11-04T03:19:01.064+0000] {processor.py:161} INFO - Started process (PID=51) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:19:01.070+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:19:01.086+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:19:01.085+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:19:01.106+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:19:01.103+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+  File "/opt/airflow/src/niftron/ingestion/main.py", line 3, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-11-04T03:19:01.107+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:19:02.498+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.471 seconds
+[2025-11-04T03:19:33.191+0000] {processor.py:161} INFO - Started process (PID=59) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:19:33.195+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:19:33.207+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:19:33.206+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:19:33.224+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:19:33.220+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+  File "/opt/airflow/src/niftron/ingestion/main.py", line 3, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-11-04T03:19:33.224+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:19:37.892+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 4.710 seconds
+[2025-11-04T03:20:10.284+0000] {processor.py:161} INFO - Started process (PID=67) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:20:10.295+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:20:10.316+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:20:10.315+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:20:10.398+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:20:10.385+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+  File "/opt/airflow/src/niftron/ingestion/main.py", line 3, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-11-04T03:20:10.401+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:20:11.816+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.610 seconds
+[2025-11-04T03:20:42.149+0000] {processor.py:161} INFO - Started process (PID=75) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:20:42.154+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:20:42.164+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:20:42.161+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:20:42.188+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:20:42.182+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+  File "/opt/airflow/src/niftron/ingestion/main.py", line 3, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-11-04T03:20:42.188+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:20:43.726+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.621 seconds
+[2025-11-04T03:21:15.517+0000] {processor.py:161} INFO - Started process (PID=83) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:21:15.522+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:21:15.534+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:21:15.533+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:21:15.554+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:21:15.553+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+  File "/opt/airflow/src/niftron/ingestion/main.py", line 3, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-11-04T03:21:15.555+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:21:19.865+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 4.361 seconds
+[2025-11-04T03:21:50.495+0000] {processor.py:161} INFO - Started process (PID=91) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:21:50.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:21:50.508+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:21:50.505+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:21:50.526+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:21:50.521+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+  File "/opt/airflow/src/niftron/ingestion/main.py", line 3, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-11-04T03:21:50.526+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:21:55.073+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 4.604 seconds
+[2025-11-04T03:22:27.908+0000] {processor.py:161} INFO - Started process (PID=99) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:22:27.910+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:22:27.916+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:22:27.915+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:22:27.928+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:22:27.925+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+  File "/opt/airflow/src/niftron/ingestion/main.py", line 3, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-11-04T03:22:27.929+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:22:29.257+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.362 seconds
+[2025-11-04T03:22:59.463+0000] {processor.py:161} INFO - Started process (PID=108) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:22:59.465+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:22:59.474+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:22:59.472+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:22:59.483+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:22:59.481+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+  File "/opt/airflow/src/niftron/ingestion/main.py", line 3, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-11-04T03:22:59.483+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:23:00.882+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.432 seconds
+[2025-11-04T03:23:31.809+0000] {processor.py:161} INFO - Started process (PID=116) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:23:31.814+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:23:31.817+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:23:31.817+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:23:31.833+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:23:31.831+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+  File "/opt/airflow/src/niftron/ingestion/main.py", line 3, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-11-04T03:23:31.834+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:23:33.163+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.369 seconds
+[2025-11-04T03:24:03.929+0000] {processor.py:161} INFO - Started process (PID=124) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:24:03.931+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:24:03.934+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:24:03.934+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:24:03.948+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:24:03.947+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+  File "/opt/airflow/src/niftron/ingestion/main.py", line 3, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-11-04T03:24:03.949+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:24:05.383+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.467 seconds
+[2025-11-04T03:24:36.155+0000] {processor.py:161} INFO - Started process (PID=132) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:24:36.157+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:24:36.164+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:24:36.163+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:24:36.174+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:24:36.173+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 7, in <module>
+    from niftron.ingestion import main as ingestion_main
+  File "/opt/airflow/src/niftron/ingestion/main.py", line 3, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-11-04T03:24:36.175+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:24:37.664+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 1.527 seconds
+[2025-11-04T03:37:32.614+0000] {processor.py:161} INFO - Started process (PID=42) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:37:32.620+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:37:32.675+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:37:32.667+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:37:42.833+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:37:42.818+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 9, in <module>
+    from niftron.analysis import main as analysis_main
+  File "/opt/airflow/src/niftron/analysis/main.py", line 15, in <module>
+    lem_model = joblib.load(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+          ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 462, in load_build
+    _array_payload = array_wrapper.read(self, self.ensure_native_byte_order)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 284, in read
+    array = self.read_array(unpickler, ensure_native_byte_order)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 175, in read_array
+    array = pickle.load(unpickler.file_handle)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/numpy/random/_pickle.py", line 34, in __bit_generator_ctor
+    raise ValueError(str(bit_generator_name) + ' is not a known '
+ValueError: <class 'numpy.random._mt19937.MT19937'> is not a known BitGenerator module.
+[2025-11-04T03:37:42.837+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:37:44.178+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 11.621 seconds
+[2025-11-04T03:38:14.393+0000] {processor.py:161} INFO - Started process (PID=58) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:38:14.398+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:38:14.413+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:38:14.412+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:38:19.165+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:38:19.149+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 9, in <module>
+    from niftron.analysis import main as analysis_main
+  File "/opt/airflow/src/niftron/analysis/main.py", line 15, in <module>
+    lem_model = joblib.load(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+          ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 462, in load_build
+    _array_payload = array_wrapper.read(self, self.ensure_native_byte_order)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 284, in read
+    array = self.read_array(unpickler, ensure_native_byte_order)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 175, in read_array
+    array = pickle.load(unpickler.file_handle)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/numpy/random/_pickle.py", line 34, in __bit_generator_ctor
+    raise ValueError(str(bit_generator_name) + ' is not a known '
+ValueError: <class 'numpy.random._mt19937.MT19937'> is not a known BitGenerator module.
+[2025-11-04T03:38:19.167+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:38:20.709+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 6.360 seconds
+[2025-11-04T03:38:51.236+0000] {processor.py:161} INFO - Started process (PID=74) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:38:51.238+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:38:51.241+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:38:51.240+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:38:52.391+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:38:52.388+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 9, in <module>
+    from niftron.analysis import main as analysis_main
+  File "/opt/airflow/src/niftron/analysis/main.py", line 15, in <module>
+    lem_model = joblib.load(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+          ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 462, in load_build
+    _array_payload = array_wrapper.read(self, self.ensure_native_byte_order)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 284, in read
+    array = self.read_array(unpickler, ensure_native_byte_order)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 175, in read_array
+    array = pickle.load(unpickler.file_handle)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/numpy/random/_pickle.py", line 34, in __bit_generator_ctor
+    raise ValueError(str(bit_generator_name) + ' is not a known '
+ValueError: <class 'numpy.random._mt19937.MT19937'> is not a known BitGenerator module.
+[2025-11-04T03:38:52.391+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:38:53.859+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 2.631 seconds
+[2025-11-04T03:39:24.505+0000] {processor.py:161} INFO - Started process (PID=90) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:39:24.507+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:39:24.510+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:39:24.510+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:39:26.994+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:39:26.990+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 9, in <module>
+    from niftron.analysis import main as analysis_main
+  File "/opt/airflow/src/niftron/analysis/main.py", line 15, in <module>
+    lem_model = joblib.load(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+          ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 462, in load_build
+    _array_payload = array_wrapper.read(self, self.ensure_native_byte_order)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 284, in read
+    array = self.read_array(unpickler, ensure_native_byte_order)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 175, in read_array
+    array = pickle.load(unpickler.file_handle)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/numpy/random/_pickle.py", line 34, in __bit_generator_ctor
+    raise ValueError(str(bit_generator_name) + ' is not a known '
+ValueError: <class 'numpy.random._mt19937.MT19937'> is not a known BitGenerator module.
+[2025-11-04T03:39:26.995+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:39:28.349+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 3.850 seconds
+[2025-11-04T03:39:58.779+0000] {processor.py:161} INFO - Started process (PID=106) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:39:58.782+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:39:58.789+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:39:58.789+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:40:00.222+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:40:00.220+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 9, in <module>
+    from niftron.analysis import main as analysis_main
+  File "/opt/airflow/src/niftron/analysis/main.py", line 15, in <module>
+    lem_model = joblib.load(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+          ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 462, in load_build
+    _array_payload = array_wrapper.read(self, self.ensure_native_byte_order)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 284, in read
+    array = self.read_array(unpickler, ensure_native_byte_order)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 175, in read_array
+    array = pickle.load(unpickler.file_handle)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/numpy/random/_pickle.py", line 34, in __bit_generator_ctor
+    raise ValueError(str(bit_generator_name) + ' is not a known '
+ValueError: <class 'numpy.random._mt19937.MT19937'> is not a known BitGenerator module.
+[2025-11-04T03:40:00.224+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:40:01.653+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 2.889 seconds
+[2025-11-04T03:40:31.821+0000] {processor.py:161} INFO - Started process (PID=122) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:40:31.822+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:40:31.825+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:40:31.825+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:40:32.895+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:40:32.893+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 9, in <module>
+    from niftron.analysis import main as analysis_main
+  File "/opt/airflow/src/niftron/analysis/main.py", line 15, in <module>
+    lem_model = joblib.load(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+          ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 462, in load_build
+    _array_payload = array_wrapper.read(self, self.ensure_native_byte_order)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 284, in read
+    array = self.read_array(unpickler, ensure_native_byte_order)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 175, in read_array
+    array = pickle.load(unpickler.file_handle)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/numpy/random/_pickle.py", line 34, in __bit_generator_ctor
+    raise ValueError(str(bit_generator_name) + ' is not a known '
+ValueError: <class 'numpy.random._mt19937.MT19937'> is not a known BitGenerator module.
+[2025-11-04T03:40:32.895+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:40:34.202+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 2.402 seconds
+[2025-11-04T03:41:05.417+0000] {processor.py:161} INFO - Started process (PID=138) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:41:05.422+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:41:05.434+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:41:05.434+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:41:07.207+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:41:07.204+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 9, in <module>
+    from niftron.analysis import main as analysis_main
+  File "/opt/airflow/src/niftron/analysis/main.py", line 15, in <module>
+    lem_model = joblib.load(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+          ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 462, in load_build
+    _array_payload = array_wrapper.read(self, self.ensure_native_byte_order)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 284, in read
+    array = self.read_array(unpickler, ensure_native_byte_order)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 175, in read_array
+    array = pickle.load(unpickler.file_handle)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/numpy/random/_pickle.py", line 34, in __bit_generator_ctor
+    raise ValueError(str(bit_generator_name) + ' is not a known '
+ValueError: <class 'numpy.random._mt19937.MT19937'> is not a known BitGenerator module.
+[2025-11-04T03:41:07.207+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:41:08.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 3.129 seconds
+[2025-11-04T03:50:31.954+0000] {processor.py:161} INFO - Started process (PID=50) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:50:31.959+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:50:31.984+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:50:31.983+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:50:38.299+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:50:38.292+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 9, in <module>
+    from niftron.analysis import main as analysis_main
+  File "/opt/airflow/src/niftron/analysis/main.py", line 15, in <module>
+    lem_model = joblib.load(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+          ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 462, in load_build
+    _array_payload = array_wrapper.read(self, self.ensure_native_byte_order)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 284, in read
+    array = self.read_array(unpickler, ensure_native_byte_order)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 175, in read_array
+    array = pickle.load(unpickler.file_handle)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/numpy/random/_pickle.py", line 34, in __bit_generator_ctor
+    raise ValueError(str(bit_generator_name) + ' is not a known '
+ValueError: <class 'numpy.random._mt19937.MT19937'> is not a known BitGenerator module.
+[2025-11-04T03:50:38.300+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:50:39.669+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 7.742 seconds
+[2025-11-04T03:51:09.781+0000] {processor.py:161} INFO - Started process (PID=66) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:51:09.786+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:51:09.791+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:51:09.790+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:51:12.395+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:51:12.390+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 9, in <module>
+    from niftron.analysis import main as analysis_main
+  File "/opt/airflow/src/niftron/analysis/main.py", line 15, in <module>
+    lem_model = joblib.load(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+          ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 462, in load_build
+    _array_payload = array_wrapper.read(self, self.ensure_native_byte_order)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 284, in read
+    array = self.read_array(unpickler, ensure_native_byte_order)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 175, in read_array
+    array = pickle.load(unpickler.file_handle)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/numpy/random/_pickle.py", line 34, in __bit_generator_ctor
+    raise ValueError(str(bit_generator_name) + ' is not a known '
+ValueError: <class 'numpy.random._mt19937.MT19937'> is not a known BitGenerator module.
+[2025-11-04T03:51:12.396+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:51:14.621+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 4.845 seconds
+[2025-11-04T03:51:45.325+0000] {processor.py:161} INFO - Started process (PID=82) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:51:45.327+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:51:45.340+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:51:45.338+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:51:47.406+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:51:47.403+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 9, in <module>
+    from niftron.analysis import main as analysis_main
+  File "/opt/airflow/src/niftron/analysis/main.py", line 15, in <module>
+    lem_model = joblib.load(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+          ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 462, in load_build
+    _array_payload = array_wrapper.read(self, self.ensure_native_byte_order)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 284, in read
+    array = self.read_array(unpickler, ensure_native_byte_order)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 175, in read_array
+    array = pickle.load(unpickler.file_handle)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/numpy/random/_pickle.py", line 34, in __bit_generator_ctor
+    raise ValueError(str(bit_generator_name) + ' is not a known '
+ValueError: <class 'numpy.random._mt19937.MT19937'> is not a known BitGenerator module.
+[2025-11-04T03:51:47.406+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:51:48.799+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 3.491 seconds
+[2025-11-04T03:52:19.258+0000] {processor.py:161} INFO - Started process (PID=98) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:52:19.260+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:52:19.275+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:52:19.273+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:52:22.883+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:52:22.878+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 9, in <module>
+    from niftron.analysis import main as analysis_main
+  File "/opt/airflow/src/niftron/analysis/main.py", line 15, in <module>
+    lem_model = joblib.load(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+          ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 462, in load_build
+    _array_payload = array_wrapper.read(self, self.ensure_native_byte_order)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 284, in read
+    array = self.read_array(unpickler, ensure_native_byte_order)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 175, in read_array
+    array = pickle.load(unpickler.file_handle)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/numpy/random/_pickle.py", line 34, in __bit_generator_ctor
+    raise ValueError(str(bit_generator_name) + ' is not a known '
+ValueError: <class 'numpy.random._mt19937.MT19937'> is not a known BitGenerator module.
+[2025-11-04T03:52:22.884+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:52:24.319+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 5.082 seconds
+[2025-11-04T03:52:55.470+0000] {processor.py:161} INFO - Started process (PID=114) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:52:55.472+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:52:55.478+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:52:55.478+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:52:56.636+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:52:56.634+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 9, in <module>
+    from niftron.analysis import main as analysis_main
+  File "/opt/airflow/src/niftron/analysis/main.py", line 15, in <module>
+    lem_model = joblib.load(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+          ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 462, in load_build
+    _array_payload = array_wrapper.read(self, self.ensure_native_byte_order)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 284, in read
+    array = self.read_array(unpickler, ensure_native_byte_order)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 175, in read_array
+    array = pickle.load(unpickler.file_handle)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/numpy/random/_pickle.py", line 34, in __bit_generator_ctor
+    raise ValueError(str(bit_generator_name) + ' is not a known '
+ValueError: <class 'numpy.random._mt19937.MT19937'> is not a known BitGenerator module.
+[2025-11-04T03:52:56.636+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:52:58.035+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 2.581 seconds
+[2025-11-04T03:53:29.122+0000] {processor.py:161} INFO - Started process (PID=130) to work on /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:53:29.126+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/niftron_pipeline_dag.py for tasks to queue
+[2025-11-04T03:53:29.143+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:53:29.142+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:53:30.684+0000] {logging_mixin.py:188} INFO - [2025-11-04T03:53:30.682+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/niftron_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/niftron_pipeline_dag.py", line 9, in <module>
+    from niftron.analysis import main as analysis_main
+  File "/opt/airflow/src/niftron/analysis/main.py", line 15, in <module>
+    lem_model = joblib.load(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+          ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 462, in load_build
+    _array_payload = array_wrapper.read(self, self.ensure_native_byte_order)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 284, in read
+    array = self.read_array(unpickler, ensure_native_byte_order)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/joblib/numpy_pickle.py", line 175, in read_array
+    array = pickle.load(unpickler.file_handle)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/numpy/random/_pickle.py", line 34, in __bit_generator_ctor
+    raise ValueError(str(bit_generator_name) + ' is not a known '
+ValueError: <class 'numpy.random._mt19937.MT19937'> is not a known BitGenerator module.
+[2025-11-04T03:53:30.685+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/niftron_pipeline_dag.py
+[2025-11-04T03:53:32.072+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/niftron_pipeline_dag.py took 2.981 seconds

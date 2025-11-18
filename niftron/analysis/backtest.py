@@ -1,5 +1,3 @@
-# niftron/analysis/backtest.py
-
 import pandas as pd
 import joblib
 import os
@@ -11,7 +9,6 @@ simulation_cache = TTLCache(maxsize=1, ttl=43200)
 cache = TTLCache(maxsize=1, ttl=43200)
 
 
-# --- HELPER FUNCTIONS (UNCHANGED) ---
 
 def calculate_she_score(signals_df: pd.DataFrame) -> pd.DataFrame:
     weights = {'trend': 0.4, 'momentum': 0.3, 'macd': 0.3}

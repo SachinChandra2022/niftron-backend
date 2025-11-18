@@ -1,0 +1,16 @@
+# requirements-api.txt (FINAL CORRECT VERSION)
+
+# --- Core Data Science & ML ---
+numpy==1.26.4
+scikit-learn==1.7.2
+joblib==1.5.2
+pandas
+yfinance
+google-generativeai
+cachetools
+
+# --- FastAPI Web Backend ---
+fastapi
+uvicorn[standard]
+python-dotenv
+psycopg2-binary
