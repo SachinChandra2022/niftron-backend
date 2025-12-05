@@ -29,6 +29,7 @@
 ---
 
 ## Link to the frontend: [[Link](https://github.com/SachinChandra2022/niftron-frontend)]
+## Deployed at: [[Link](https://niftron-frontend.vercel.app/)]
 
 ---
 
