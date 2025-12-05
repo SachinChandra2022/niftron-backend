@@ -28,6 +28,10 @@
 
 ---
 
+## Link to the frontend: [[Link](https://github.com/SachinChandra2022/niftron-frontend)]
+
+---
+
 ## 🏛️ System Architecture
 
 This backend is designed with a clear separation of concerns between its two primary functions: **serving real-time requests** and **performing scheduled, heavy computations.**
